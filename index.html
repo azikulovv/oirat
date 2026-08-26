@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="Ойрат пен Анастасияның үйлену тойына шақыру"
+  >
+
+  <title>Ойрат & Анастасия</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* =====================================================
+       VARIABLES
+    ====================================================== */
+
+    :root {
+      --bg: #f6f2eb;
+      --bg-secondary: #eee8dd;
+
+      --text: #24231f;
+      --muted: #77736b;
+
+      --gold: #ae9568;
+      --gold-light: #d5bd91;
+
+      --line: rgba(36, 35, 31, 0.15);
+
+      --hero-image:
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90");
+
+      --final-image:
+        url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=90");
+    }
+
+
+    /* =====================================================
+       RESET
+    ====================================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      min-width: 320px;
+
+      background: var(--bg);
+      color: var(--text);
+
+      font-family: "Manrope", sans-serif;
+      font-weight: 400;
+
+      overflow-x: hidden;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+
+    /* =====================================================
+       COMMON
+    ====================================================== */
+
+    .section {
+      position: relative;
+      padding: 88px 24px;
+    }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      margin-bottom: 28px;
+
+      color: var(--gold);
+
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .section-label::before {
+      content: "";
+
+      width: 28px;
+      height: 1px;
+
+      background: var(--gold);
+    }
+
+
+    /* =====================================================
+       HERO
+    ====================================================== */
+
+    .hero {
+      position: relative;
+
+      min-height: 100svh;
+      min-height: 100dvh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding:
+        32px
+        24px
+        calc(32px + env(safe-area-inset-bottom));
+
+      overflow: hidden;
+
+      color: #fff;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.03) 15%,
+          rgba(0, 0, 0, 0.12) 40%,
+          rgba(0, 0, 0, 0.84) 100%
+        ),
+        var(--hero-image);
+
+      background-position: center;
+      background-size: cover;
+    }
+
+    .hero__top {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+
+      padding:
+        calc(24px + env(safe-area-inset-top))
+        24px
+        24px;
+    }
+
+    .hero__label {
+      font-size: 9px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+
+      opacity: 0.78;
+    }
+
+    .hero__top-date {
+      margin-top: 8px;
+
+      color: rgba(255, 255, 255, 0.65);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 17px;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero__names {
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(62px, 18vw, 84px);
+      font-weight: 400;
+
+      line-height: 0.75;
+      letter-spacing: -0.045em;
+    }
+
+    .hero__names span {
+      display: block;
+    }
+
+    .hero__amp {
+      margin: 15px 0;
+
+      color: var(--gold-light);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 38px;
+
+      line-height: 1;
+    }
+
+    .hero__date {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      margin-top: 32px;
+
+      font-size: 10px;
+      letter-spacing: 0.22em;
+
+      text-transform: uppercase;
+    }
+
+    .hero__date::before {
+      content: "";
+
+      width: 34px;
+      height: 1px;
+
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .hero__scroll {
+      position: absolute;
+
+      right: 24px;
+      bottom:
+        calc(28px + env(safe-area-inset-bottom));
+
+      z-index: 3;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      gap: 8px;
+
+      font-size: 8px;
+      letter-spacing: 0.15em;
+
+      text-transform: uppercase;
+
+      opacity: 0.65;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 38px;
+
+      background: rgba(255, 255, 255, 0.6);
+
+      animation: scrollLine 2s infinite;
+    }
+
+    @keyframes scrollLine {
+      0%,
+      100% {
+        transform: scaleY(0.5);
+        transform-origin: top;
+      }
+
+      50% {
+        transform: scaleY(1);
+        transform-origin: top;
+      }
+    }
+
+
+    /* =====================================================
+       INVITATION
+    ====================================================== */
+
+    .invitation {
+      text-align: center;
+    }
+
+    .invitation .section-label {
+      justify-content: center;
+    }
+
+    .invitation__ornament {
+      margin-bottom: 22px;
+
+      color: var(--gold);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+    }
+
+    .invitation__title {
+      max-width: 330px;
+
+      margin: 0 auto 28px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 49px;
+      font-weight: 400;
+
+      line-height: 0.92;
+    }
+
+    .invitation__text {
+      max-width: 315px;
+
+      margin: 0 auto;
+
+      color: var(--muted);
+
+      font-size: 13px;
+      font-weight: 300;
+
+      line-height: 1.9;
+    }
+
+    .invitation__photo {
+      width: 100%;
+      height: 340px;
+
+      margin-top: 45px;
+
+      object-fit: cover;
+      object-position: center;
+
+      filter: saturate(0.85);
+    }
+
+
+    /* =====================================================
+       QUOTE
+    ====================================================== */
+
+    .quote {
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      text-align: center;
+    }
+
+    .quote__symbol {
+      margin-bottom: 15px;
+
+      color: var(--gold);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+    }
+
+    .quote__text {
+      max-width: 330px;
+
+      margin: 0 auto;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 32px;
+      font-weight: 400;
+
+      line-height: 1.15;
+    }
+
+
+    /* =====================================================
+       DATE
+    ====================================================== */
+
+    .date {
+      padding-top: 70px;
+      padding-bottom: 80px;
+
+      text-align: center;
+    }
+
+    .date .section-label {
+      justify-content: center;
+    }
+
+    .date__number {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 120px;
+      font-weight: 400;
+
+      line-height: 0.72;
+      letter-spacing: -0.07em;
+    }
+
+    .date__month {
+      margin-top: 24px;
+
+      font-size: 12px;
+      font-weight: 500;
+
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+
+    .date__year {
+      margin-top: 7px;
+
+      color: var(--muted);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 31px;
+    }
+
+    .date__weekday {
+      margin-top: 24px;
+
+      color: var(--gold);
+
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .date__divider {
+      width: 1px;
+      height: 55px;
+
+      margin: 32px auto;
+
+      background: var(--line);
+    }
+
+    .date__time {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 44px;
+    }
+
+    .date__caption {
+      margin-top: 5px;
+
+      color: var(--muted);
+
+      font-size: 8px;
+      letter-spacing: 0.2em;
+
+      text-transform: uppercase;
+    }
+
+
+    /* =====================================================
+       VENUE
+    ====================================================== */
+
+    .venue {
+      padding-top: 82px;
+      padding-bottom: 82px;
+
+      background: var(--bg-secondary);
+    }
+
+    .venue__title {
+      margin-bottom: 15px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 55px;
+      font-weight: 400;
+
+      line-height: 0.87;
+    }
+
+    .venue__name {
+      margin-top: 32px;
+
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    .venue__address {
+      margin-top: 8px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.7;
+    }
+
+    .venue__image {
+      width: 100%;
+      height: 250px;
+
+      margin-top: 38px;
+
+      object-fit: cover;
+
+      filter: saturate(0.75);
+    }
+
+    .venue__map {
+      width: 100%;
+
+      margin-top: 20px;
+
+      padding: 17px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border: 1px solid var(--text);
+
+      background: transparent;
+
+      color: var(--text);
+
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+
+      transition:
+        background 0.3s ease,
+        color 0.3s ease;
+    }
+
+    .venue__map:active {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .venue__map-arrow {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+
+    /* =====================================================
+       RSVP
+    ====================================================== */
+
+    .rsvp {
+      padding-top: 90px;
+      padding-bottom: 100px;
+    }
+
+    .rsvp__title {
+      max-width: 310px;
+
+      margin-bottom: 17px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 59px;
+      font-weight: 400;
+
+      line-height: 0.86;
+      letter-spacing: -0.03em;
+    }
+
+    .rsvp__description {
+      max-width: 320px;
+
+      margin-bottom: 42px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.8;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    .form-label {
+      display: block;
+
+      margin-bottom: 11px;
+
+      color: var(--muted);
+
+      font-size: 8px;
+      font-weight: 600;
+
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .form-input {
+      width: 100%;
+
+      padding: 14px 0;
+
+      border: 0;
+      border-bottom: 1px solid var(--line);
+
+      border-radius: 0;
+
+      outline: none;
+
+      background: transparent;
+
+      color: var(--text);
+
+      font-size: 15px;
+    }
+
+    .form-input:focus {
+      border-color: var(--gold);
+    }
+
+    .form-input::placeholder {
+      color: #aaa59c;
+    }
+
+
+    /* =====================================================
+       ATTENDANCE
+    ====================================================== */
+
+    .attendance {
+      display: grid;
+      gap: 10px;
+    }
+
+    .attendance__option {
+      position: relative;
+    }
+
+    .attendance__input {
+      position: absolute;
+
+      opacity: 0;
+
+      pointer-events: none;
+    }
+
+    .attendance__label {
+      display: block;
+
+      padding: 16px;
+
+      border: 1px solid var(--line);
+
+      color: var(--text);
+
+      font-size: 12px;
+
+      cursor: pointer;
+
+      transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    .attendance__input:checked
+      + .attendance__label {
+      border-color: var(--text);
+
+      background: var(--text);
+
+      color: var(--bg);
+    }
+
+
+    /* =====================================================
+       SUBMIT
+    ====================================================== */
+
+    .submit {
+      width: 100%;
+
+      margin-top: 16px;
+
+      padding: 19px;
+
+      background: var(--text);
+
+      color: var(--bg);
+
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: 0.2em;
+
+      text-transform: uppercase;
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    .submit:active {
+      transform: scale(0.98);
+    }
+
+
+    /* =====================================================
+       SUCCESS
+    ====================================================== */
+
+    .success {
+      display: none;
+
+      padding: 55px 20px;
+
+      text-align: center;
+    }
+
+    .success.is-visible {
+      display: block;
+    }
+
+    .success__symbol {
+      margin-bottom: 20px;
+
+      color: var(--gold);
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 42px;
+    }
+
+    .success__title {
+      margin-bottom: 15px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 56px;
+      font-weight: 400;
+
+      line-height: 0.9;
+    }
+
+    .success__text {
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       FINAL
+    ====================================================== */
+
+    .final {
+      position: relative;
+
+      min-height: 80svh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding:
+        60px
+        24px
+        calc(60px + env(safe-area-inset-bottom));
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.02),
+          rgba(0, 0, 0, 0.82)
+        ),
+        var(--final-image);
+
+      background-position: center;
+      background-size: cover;
+
+      color: #fff;
+    }
+
+    .final__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .final__small {
+      margin-bottom: 18px;
+
+      color: var(--gold-light);
+
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: 0.25em;
+
+      text-transform: uppercase;
+    }
+
+    .final__title {
+      max-width: 330px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-size: 65px;
+      font-weight: 400;
+
+      line-height: 0.8;
+      letter-spacing: -0.04em;
+    }
+
+    .final__names {
+      margin-top: 30px;
+
+      font-size: 10px;
+
+      letter-spacing: 0.22em;
+
+      text-transform: uppercase;
+    }
+
+    .final__date {
+      margin-top: 8px;
+
+      color: rgba(255, 255, 255, 0.65);
+
+      font-size: 9px;
+
+      letter-spacing: 0.2em;
+    }
+
+
+    /* =====================================================
+       REVEAL ANIMATION
+    ====================================================== */
+
+    .reveal {
+      opacity: 0;
+
+      transform: translateY(25px);
+
+      transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+
+    /* =====================================================
+       ACCESSIBILITY
+    ====================================================== */
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+
+    /* =====================================================
+       MOBILE CONTAINER
+    ====================================================== */
+
+    @media (min-width: 600px) {
+      body {
+        width: 100%;
+        max-width: 430px;
+
+        margin: 0 auto;
+
+        box-shadow:
+          0 0 80px
+          rgba(0, 0, 0, 0.08);
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <header
+    class="hero"
+    id="home"
+  >
+
+    <div class="hero__top">
+
+      <div class="hero__label">
+        Үйлену тойына шақыру
+      </div>
+
+      <div class="hero__top-date">
+        10 қазан 2026
+      </div>
+
+    </div>
+
+
+    <div class="hero__content">
+
+      <div class="hero__names">
+
+        <span>Ойрат</span>
+
+        <div class="hero__amp">
+          &
+        </div>
+
+        <span>Анастасия</span>
+
+      </div>
+
+
+      <div class="hero__date">
+        10 қазан 2026
+      </div>
+
+    </div>
+
+
+    <div class="hero__scroll">
+
+      <div>
+        Төмен
+      </div>
+
+      <div class="hero__scroll-line"></div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         INVITATION
+    ====================================================== -->
+
+    <section class="section invitation">
+
+      <div class="reveal">
+
+        <div class="invitation__ornament">
+          ✦
+        </div>
+
+
+        <div class="section-label">
+          Біздің қуанышымыз
+        </div>
+
+
+        <h1 class="invitation__title">
+          Біз үйленеміз
+        </h1>
+
+
+        <p class="invitation__text">
+          Өміріміздегі ең ерекше күндердің
+          бірін бірге атап өткіміз келеді.
+          <br>
+          <br>
+          Осы қуанышты сәтте жанымызда
+          жақындарымыз бен сүйікті
+          адамдарымыздың болғанын қалаймыз.
+        </p>
+
+
+        <img
+          class="invitation__photo"
+          src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=90"
+          alt="Үйлену тойы"
+          loading="lazy"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUOTE
+    ====================================================== -->
+
+    <section class="section quote">
+
+      <div class="reveal">
+
+        <div class="quote__symbol">
+          ✦
+        </div>
+
+        <p class="quote__text">
+          Екі жүрек,
+          бір өмір,
+          бір бақыт.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DATE
+    ====================================================== -->
+
+    <section
+      class="section date"
+      id="date"
+    >
+
+      <div class="reveal">
+
+        <div class="section-label">
+          Күнін белгілеп қойыңыз
+        </div>
+
+
+        <div class="date__number">
+          10
+        </div>
+
+
+        <div class="date__month">
+          Қазан
+        </div>
+
+
+        <div class="date__year">
+          2026
+        </div>
+
+
+        <div class="date__weekday">
+          Сенбі
+        </div>
+
+
+        <div class="date__divider"></div>
+
+
+        <div class="date__time">
+          14:00
+        </div>
+
+
+        <div class="date__caption">
+          Қонақтарды қарсы алу
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         VENUE
+    ====================================================== -->
+
+    <section
+      class="section venue"
+      id="venue"
+    >
+
+      <div class="reveal">
+
+        <div class="section-label">
+          Мерекелік кеш
+        </div>
+
+
+        <h2 class="venue__title">
+          Кездесу<br>
+          орны
+        </h2>
+
+
+        <div class="venue__name">
+          «Алтын Орда»
+        </div>
+
+
+        <div class="venue__address">
+          Қарағанды қаласы
+        </div>
+
+
+        <img
+          class="venue__image"
+          src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=90"
+          alt="Мерекелік зал"
+          loading="lazy"
+        >
+
+
+        <a
+          class="venue__map"
+          href="https://2gis.kz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <span>
+            Картадан көру
+          </span>
+
+          <span class="venue__map-arrow">
+            ↗
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RSVP
+    ====================================================== -->
+
+    <section
+      class="section rsvp"
+      id="rsvp"
+    >
+
+      <div id="rsvpFormWrapper">
+
+        <div class="reveal">
+
+          <div class="section-label">
+            RSVP
+          </div>
+
+
+          <h2 class="rsvp__title">
+            Сізді<br>
+            күтеміз
+          </h2>
+
+
+          <p class="rsvp__description">
+            Біздің қуанышымызды бірге
+            бөлісу үшін қатысатыныңызды
+            растауыңызды сұраймыз.
+          </p>
+
+        </div>
+
+
+        <form id="rsvpForm">
+
+          <!-- NAME -->
+
+          <div class="form-group">
+
+            <label
+              class="form-label"
+              for="name"
+            >
+              Аты-жөніңіз
+            </label>
+
+
+            <input
+              class="form-input"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Аты-жөніңізді енгізіңіз"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+          <!-- ATTENDANCE -->
+
+          <div class="form-group">
+
+            <span class="form-label">
+              Сіздің жауабыңыз
+            </span>
+
+
+            <div class="attendance">
+
+              <div class="attendance__option">
+
+                <input
+                  class="attendance__input"
+                  type="radio"
+                  id="yes"
+                  name="attendance"
+                  value="yes"
+                  checked
+                >
+
+
+                <label
+                  class="attendance__label"
+                  for="yes"
+                >
+                  Қуана қатысамын
+                </label>
+
+              </div>
+
+
+              <div class="attendance__option">
+
+                <input
+                  class="attendance__input"
+                  type="radio"
+                  id="no"
+                  name="attendance"
+                  value="no"
+                >
+
+
+                <label
+                  class="attendance__label"
+                  for="no"
+                >
+                  Өкінішке қарай, қатыса алмаймын
+                </label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- SUBMIT -->
+
+          <button
+            class="submit"
+            type="submit"
+          >
+            Қатысуымды растау
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- ===================================================
+           SUCCESS
+      ==================================================== -->
+
+      <div
+        class="success"
+        id="success"
+      >
+
+        <div class="success__symbol">
+          ✦
+        </div>
+
+
+        <h2 class="success__title">
+          Рақмет!
+        </h2>
+
+
+        <p class="success__text">
+          Жауабыңыз қабылданды.
+          <br>
+          Сізбен бірге бұл күнді
+          атап өтуді асыға күтеміз.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FINAL
+    ====================================================== -->
+
+    <section class="final">
+
+      <div class="final__content">
+
+        <div class="final__small">
+          Кездескенше
+        </div>
+
+
+        <div class="final__title">
+          Сіздерді<br>
+          күтеміз
+        </div>
+
+
+        <div class="final__names">
+          Ойрат & Анастасия
+        </div>
+
+
+        <div class="final__date">
+          10 · 10 · 2026
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script>
+    /* =====================================================
+       RSVP
+    ====================================================== */
+
+    const form =
+      document.getElementById("rsvpForm");
+
+    const formWrapper =
+      document.getElementById("rsvpFormWrapper");
+
+    const success =
+      document.getElementById("success");
+
+
+    form.addEventListener(
+      "submit",
+      (event) => {
+
+        event.preventDefault();
+
+
+        const formData =
+          new FormData(form);
+
+
+        const data = {
+          name:
+            String(
+              formData.get("name") || ""
+            ).trim(),
+
+          attendance:
+            formData.get("attendance")
+        };
+
+
+        /*
+          Қазір RSVP тек браузерде өңделеді.
+
+          Кейін backend қосылғанда
+          осы объектіні API-ге жіберуге болады:
+
+          fetch("/api/rsvp", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+          });
+        */
+
+        console.log("RSVP:", data);
+
+
+        formWrapper.style.display =
+          "none";
+
+
+        success.classList.add(
+          "is-visible"
+        );
+
+
+        success.scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+
+      }
+    );
+
+
+    /* =====================================================
+       SCROLL REVEAL
+    ====================================================== */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+
+    const revealObserver =
+      new IntersectionObserver(
+        (entries, observer) => {
+
+          entries.forEach((entry) => {
+
+            if (!entry.isIntersecting) {
+              return;
+            }
+
+
+            entry.target.classList.add(
+              "is-visible"
+            );
+
+
+            observer.unobserve(
+              entry.target
+            );
+
+          });
+
+        },
+        {
+          threshold: 0.15
+        }
+      );
+
+
+    revealElements.forEach((element) => {
+
+      revealObserver.observe(element);
+
+    });
+
+
+    /* =====================================================
+       SMOOTH ANCHOR SCROLL
+    ====================================================== */
+
+    document
+      .querySelectorAll(
+        'a[href^="#"]'
+      )
+      .forEach((link) => {
+
+        link.addEventListener(
+          "click",
+          (event) => {
+
+            const targetId =
+              link.getAttribute("href");
+
+
+            if (!targetId) {
+              return;
+            }
+
+
+            const target =
+              document.querySelector(
+                targetId
+              );
+
+
+            if (!target) {
+              return;
+            }
+
+
+            event.preventDefault();
+
+
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+
+          }
+        );
+
+      });
+  </script>
+
+</body>
+</html>
