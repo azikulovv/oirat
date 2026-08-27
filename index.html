@@ -72,15 +72,7 @@
       content="Ойрат пен Анастасияның үйлену тойы"
     />
 
-    <!--
-      Canonical URL:
-      Добавьте реальный URL сайта после публикации.
-
-      Например:
-      <link rel="canonical" href="https://your-domain.kz/" />
-    -->
-
-    <!-- Structured Data: Wedding Event -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -114,7 +106,7 @@
     <link
       rel="preload"
       as="image"
-      href="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90"
+      href="https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1770&auto=format&fit=crop"
       fetchpriority="high"
     />
 
@@ -133,7 +125,7 @@
         --gold-light: #d5bd91;
         --line: rgba(36, 35, 31, 0.15);
 
-        --hero-image: url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90");
+        --hero-image: url("https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=1770&auto=format&fit=crop");
 
         --final-image: url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=90");
       }
@@ -192,7 +184,6 @@
         align-items: center;
         gap: 12px;
         margin-bottom: 28px;
-
         color: var(--gold);
         font-size: 9px;
         font-weight: 600;
@@ -213,7 +204,6 @@
 
       .hero {
         position: relative;
-
         min-height: 100svh;
         min-height: 100dvh;
 
@@ -230,9 +220,9 @@
         background:
           linear-gradient(
             to bottom,
-            rgba(0, 0, 0, 0.03) 15%,
-            rgba(0, 0, 0, 0.12) 40%,
-            rgba(0, 0, 0, 0.84) 100%
+            rgba(0, 0, 0, 0.01) 15%,
+            rgba(0, 0, 0, 0.08) 40%,
+            rgba(0, 0, 0, 0.68) 100%
           ),
           var(--hero-image);
 
@@ -242,10 +232,8 @@
 
       .language-switcher {
         position: absolute;
-
         top: calc(24px + env(safe-area-inset-top));
         right: 24px;
-
         z-index: 4;
 
         display: flex;
@@ -269,8 +257,8 @@
 
         font-size: 8px;
         font-weight: 600;
-
         letter-spacing: 0.08em;
+
         text-align: center;
         text-transform: uppercase;
       }
@@ -282,7 +270,6 @@
 
       .hero__top {
         position: absolute;
-
         top: 0;
         left: 0;
 
@@ -314,13 +301,9 @@
 
       .hero__names {
         font-family: "Cormorant Garamond", serif;
-
         font-size: clamp(62px, 18vw, 84px);
-
         font-weight: 400;
-
         line-height: 0.75;
-
         letter-spacing: -0.045em;
       }
 
@@ -334,24 +317,19 @@
         color: var(--gold-light);
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 38px;
-
         line-height: 1;
       }
 
       .hero__date {
         display: flex;
         align-items: center;
-
         gap: 14px;
 
         margin-top: 32px;
 
         font-size: 10px;
-
         letter-spacing: 0.22em;
-
         text-transform: uppercase;
       }
 
@@ -366,7 +344,6 @@
 
       .hero__scroll {
         position: absolute;
-
         right: 24px;
         bottom: calc(28px + env(safe-area-inset-bottom));
 
@@ -375,13 +352,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         gap: 8px;
 
         font-size: 8px;
-
         letter-spacing: 0.15em;
-
         text-transform: uppercase;
 
         opacity: 0.65;
@@ -427,7 +401,6 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 30px;
       }
 
@@ -437,11 +410,8 @@
         margin: 0 auto 28px;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 49px;
-
         font-weight: 400;
-
         line-height: 0.92;
       }
 
@@ -453,9 +423,7 @@
         color: var(--muted);
 
         font-size: 13px;
-
         font-weight: 300;
-
         line-height: 1.9;
       }
 
@@ -488,7 +456,6 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 28px;
       }
 
@@ -498,11 +465,8 @@
         margin: 0 auto;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 32px;
-
         font-weight: 400;
-
         line-height: 1.15;
       }
 
@@ -523,13 +487,9 @@
 
       .date__number {
         font-family: "Cormorant Garamond", serif;
-
         font-size: 120px;
-
         font-weight: 400;
-
         line-height: 0.72;
-
         letter-spacing: -0.07em;
       }
 
@@ -537,11 +497,8 @@
         margin-top: 24px;
 
         font-size: 12px;
-
         font-weight: 500;
-
         letter-spacing: 0.3em;
-
         text-transform: uppercase;
       }
 
@@ -551,7 +508,6 @@
         color: var(--muted);
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 31px;
       }
 
@@ -561,11 +517,8 @@
         color: var(--gold);
 
         font-size: 9px;
-
         font-weight: 600;
-
         letter-spacing: 0.25em;
-
         text-transform: uppercase;
       }
 
@@ -580,7 +533,6 @@
 
       .date__time {
         font-family: "Cormorant Garamond", serif;
-
         font-size: 44px;
       }
 
@@ -590,10 +542,93 @@
         color: var(--muted);
 
         font-size: 8px;
-
         letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+
+      /* =====================================================
+         COUNTDOWN
+      ====================================================== */
+
+      .countdown {
+        padding-top: 75px;
+        padding-bottom: 80px;
+
+        text-align: center;
+
+        background: var(--bg-secondary);
+      }
+
+      .countdown .section-label {
+        justify-content: center;
+      }
+
+      .countdown__title {
+        margin-top: 5px;
+
+        font-family: "Cormorant Garamond", serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 0.95;
+      }
+
+      .countdown__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+
+        margin-top: 42px;
+      }
+
+      .countdown__item {
+        min-width: 0;
+
+        padding: 17px 4px;
+
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .countdown__number {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1;
+
+        font-variant-numeric: tabular-nums;
+      }
+
+      .countdown__label {
+        margin-top: 7px;
+
+        color: var(--muted);
+
+        font-size: 7px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
 
         text-transform: uppercase;
+      }
+
+      .countdown__caption {
+        margin-top: 25px;
+
+        color: var(--gold);
+
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+
+        text-transform: uppercase;
+      }
+
+      .countdown__finished {
+        margin-top: 35px;
+
+        color: var(--gold);
+
+        font-family: "Cormorant Garamond", serif;
+        font-size: 30px;
       }
 
       /* =====================================================
@@ -611,11 +646,8 @@
         margin-bottom: 15px;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 55px;
-
         font-weight: 400;
-
         line-height: 0.87;
       }
 
@@ -623,7 +655,6 @@
         margin-top: 32px;
 
         font-size: 19px;
-
         font-weight: 500;
       }
 
@@ -633,8 +664,36 @@
         color: var(--muted);
 
         font-size: 13px;
-
         line-height: 1.7;
+      }
+
+      /* =====================================================
+         WEDDING HOSTS
+      ====================================================== */
+
+      .venue__hosts {
+        margin-top: 28px;
+        padding-top: 22px;
+
+        border-top: 1px solid var(--line);
+      }
+
+      .venue__hosts-label {
+        color: var(--gold);
+
+        font-size: 8px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+
+        text-transform: uppercase;
+      }
+
+      .venue__hosts-names {
+        margin-top: 7px;
+
+        font-family: "Cormorant Garamond", serif;
+        font-size: 27px;
+        font-weight: 400;
       }
 
       .venue__image {
@@ -652,24 +711,19 @@
         width: 100%;
 
         margin-top: 20px;
-
         padding: 17px 20px;
 
         display: flex;
-
         align-items: center;
         justify-content: space-between;
 
         border: 1px solid var(--text);
 
         background: transparent;
-
         color: var(--text);
 
         font-size: 9px;
-
         font-weight: 600;
-
         letter-spacing: 0.15em;
 
         text-transform: uppercase;
@@ -686,7 +740,6 @@
 
       .venue__map-arrow {
         font-size: 18px;
-
         font-weight: 300;
       }
 
@@ -705,13 +758,9 @@
         margin-bottom: 17px;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 59px;
-
         font-weight: 400;
-
         line-height: 0.86;
-
         letter-spacing: -0.03em;
       }
 
@@ -723,7 +772,6 @@
         color: var(--muted);
 
         font-size: 13px;
-
         line-height: 1.8;
       }
 
@@ -739,9 +787,7 @@
         color: var(--muted);
 
         font-size: 8px;
-
         font-weight: 600;
-
         letter-spacing: 0.18em;
 
         text-transform: uppercase;
@@ -753,15 +799,12 @@
         padding: 14px 0;
 
         border: 0;
-
         border-bottom: 1px solid var(--line);
-
         border-radius: 0;
 
         outline: none;
 
         background: transparent;
-
         color: var(--text);
 
         font-size: 15px;
@@ -781,7 +824,6 @@
 
       .attendance {
         display: grid;
-
         gap: 10px;
       }
 
@@ -793,7 +835,6 @@
         position: absolute;
 
         opacity: 0;
-
         pointer-events: none;
       }
 
@@ -820,7 +861,6 @@
         border-color: var(--text);
 
         background: var(--text);
-
         color: var(--bg);
       }
 
@@ -832,17 +872,13 @@
         width: 100%;
 
         margin-top: 16px;
-
         padding: 19px;
 
         background: var(--text);
-
         color: var(--bg);
 
         font-size: 9px;
-
         font-weight: 600;
-
         letter-spacing: 0.2em;
 
         text-transform: uppercase;
@@ -878,7 +914,6 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 42px;
       }
 
@@ -886,11 +921,8 @@
         margin-bottom: 15px;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 56px;
-
         font-weight: 400;
-
         line-height: 0.9;
       }
 
@@ -898,7 +930,6 @@
         color: var(--muted);
 
         font-size: 13px;
-
         line-height: 1.8;
       }
 
@@ -912,9 +943,7 @@
         min-height: 80svh;
 
         display: flex;
-
         flex-direction: column;
-
         justify-content: flex-end;
 
         padding: 60px 24px calc(60px + env(safe-area-inset-bottom));
@@ -933,7 +962,6 @@
 
       .final__content {
         position: relative;
-
         z-index: 2;
       }
 
@@ -943,9 +971,7 @@
         color: var(--gold-light);
 
         font-size: 9px;
-
         font-weight: 600;
-
         letter-spacing: 0.25em;
 
         text-transform: uppercase;
@@ -955,13 +981,9 @@
         max-width: 330px;
 
         font-family: "Cormorant Garamond", serif;
-
         font-size: 65px;
-
         font-weight: 400;
-
         line-height: 0.8;
-
         letter-spacing: -0.04em;
       }
 
@@ -969,7 +991,6 @@
         margin-top: 30px;
 
         font-size: 10px;
-
         letter-spacing: 0.22em;
 
         text-transform: uppercase;
@@ -981,12 +1002,11 @@
         color: rgba(255, 255, 255, 0.65);
 
         font-size: 9px;
-
         letter-spacing: 0.2em;
       }
 
       /* =====================================================
-         REVEAL ANIMATION
+         REVEAL
       ====================================================== */
 
       .reveal {
@@ -1001,7 +1021,6 @@
 
       .reveal.is-visible {
         opacity: 1;
-
         transform: translateY(0);
       }
 
@@ -1018,10 +1037,26 @@
         *::before,
         *::after {
           animation-duration: 0.01ms !important;
-
           animation-iteration-count: 1 !important;
-
           transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* =====================================================
+         SMALL MOBILE
+      ====================================================== */
+
+      @media (max-width: 360px) {
+        .countdown__number {
+          font-size: 29px;
+        }
+
+        .countdown__grid {
+          gap: 4px;
+        }
+
+        .countdown__label {
+          font-size: 6px;
         }
       }
 
@@ -1032,7 +1067,6 @@
       @media (min-width: 600px) {
         body {
           width: 100%;
-
           max-width: 430px;
 
           margin: 0 auto;
@@ -1065,7 +1099,6 @@
       <div class="hero__top">
         <div class="hero__label">Үйлену тойына шақыру</div>
 
-        <!-- Теперь дата переводится -->
         <div class="hero__top-date">10 қазан 2026</div>
       </div>
 
@@ -1078,7 +1111,6 @@
           <span>Анастасия</span>
         </div>
 
-        <!-- Теперь эта дата тоже переводится -->
         <div class="hero__date">10 қазан 2026</div>
       </div>
 
@@ -1103,12 +1135,9 @@
           <h1 class="invitation__title">Ойрат & Анастасия</h1>
 
           <p class="invitation__text">
-            Біз үйленеміз. Өміріміздегі ең ерекше күндердің бірін бірге атап
-            өткіміз келеді.
-
+            Өміріміздегі ең ерекше күндердің бірін бірге атап өткіміз келеді.
             <br />
             <br />
-
             Осы қуанышты сәтте жанымызда жақындарымыз бен сүйікті адамдарымыздың
             болғанын қалаймыз.
           </p>
@@ -1170,6 +1199,46 @@
       </section>
 
       <!-- =====================================================
+           COUNTDOWN
+      ====================================================== -->
+
+      <section class="section countdown" id="countdown">
+        <div class="reveal">
+          <div class="section-label">Тойға дейін</div>
+
+          <div class="countdown__title">Аз ғана уақыт қалды</div>
+
+          <div class="countdown__grid">
+            <div class="countdown__item">
+              <div class="countdown__number" id="countdownDays">00</div>
+
+              <div class="countdown__label">Күн</div>
+            </div>
+
+            <div class="countdown__item">
+              <div class="countdown__number" id="countdownHours">00</div>
+
+              <div class="countdown__label">Сағат</div>
+            </div>
+
+            <div class="countdown__item">
+              <div class="countdown__number" id="countdownMinutes">00</div>
+
+              <div class="countdown__label">Минут</div>
+            </div>
+
+            <div class="countdown__item">
+              <div class="countdown__number" id="countdownSeconds">00</div>
+
+              <div class="countdown__label">Секунд</div>
+            </div>
+          </div>
+
+          <div class="countdown__caption">10 қазан 2026 · 14:00</div>
+        </div>
+      </section>
+
+      <!-- =====================================================
            VENUE
       ====================================================== -->
 
@@ -1185,11 +1254,18 @@
 
           <div class="venue__name">«Алтын Орда»</div>
 
-          <!-- АДРЕС -->
           <div class="venue__address">
             Қарағанды қаласы,
             <br />
             Карла Маркса 3/6
+          </div>
+
+          <!-- ТОЙ ИЕЛЕРІ -->
+
+          <div class="venue__hosts">
+            <div class="venue__hosts-label">Той иелері</div>
+
+            <div class="venue__hosts-names">Саламат & Назгүл</div>
           </div>
 
           <img
@@ -1209,7 +1285,7 @@
             rel="noopener noreferrer"
             aria-label="«Алтын Орда» мейрамханасының орналасуын 2GIS картасынан көру"
           >
-            <span> Картадан көру </span>
+            <span>Картадан көру</span>
 
             <span class="venue__map-arrow"> ↗ </span>
           </a>
@@ -1297,9 +1373,7 @@
           </form>
         </div>
 
-        <!-- ===================================================
-             SUCCESS
-        ==================================================== -->
+        <!-- SUCCESS -->
 
         <div class="success" id="success">
           <div class="success__symbol">✦</div>
@@ -1339,7 +1413,7 @@
       <p>
         Ойрат пен Анастасияның үйлену тойы 2026 жылғы 10 қазанда сағат 14:00-де
         Қарағанды қаласындағы «Алтын Орда» мейрамханасында, Карла Маркса 3/6
-        мекенжайында өтеді.
+        мекенжайында өтеді. Той иелері: Саламат және Назгүл.
       </p>
     </noscript>
 
@@ -1376,7 +1450,6 @@
 
             heroLabel: "Үйлену тойына шақыру",
 
-            /* ИСПРАВЛЕНО */
             heroDate: "10 қазан 2026",
 
             invitationLabel: "Біздің қуанышымыз",
@@ -1384,7 +1457,7 @@
             invitationTitle: "Ойрат & Анастасия",
 
             invitationText:
-              "Біз үйленеміз. Өміріміздегі ең ерекше күндердің бірін бірге атап өткіміз келеді.<br><br>Осы қуанышты сәтте жанымызда жақындарымыз бен сүйікті адамдарымыздың болғанын қалаймыз.",
+              "Өміріміздегі ең ерекше күндердің бірін бірге атап өткіміз келеді.<br><br>Осы қуанышты сәтте жанымызда жақындарымыз бен сүйікті адамдарымыздың болғанын қалаймыз.",
 
             quote: "Екі жүрек,<br>бір өмір,<br>бір бақыт.",
 
@@ -1396,6 +1469,22 @@
 
             timeCaption: "Қонақтарды қарсы алу",
 
+            countdownLabel: "Тойға дейін",
+
+            countdownTitle: "Аз ғана уақыт қалды",
+
+            countdownDays: "Күн",
+
+            countdownHours: "Сағат",
+
+            countdownMinutes: "Минут",
+
+            countdownSeconds: "Секунд",
+
+            countdownCaption: "10 қазан 2026 · 14:00",
+
+            countdownFinished: "Тойымыз басталды",
+
             venueLabel: "Мерекелік кеш",
 
             venueTitle: "Кездесу<br>орны",
@@ -1403,6 +1492,10 @@
             venueName: "«Алтын Орда»",
 
             venueAddress: "Қарағанды қаласы,<br>Карла Маркса 3/6",
+
+            hostsLabel: "Той иелері",
+
+            hostsNames: "Саламат & Назгүл",
 
             map: "Картадан көру",
 
@@ -1465,7 +1558,6 @@
 
             heroLabel: "Приглашение на свадьбу",
 
-            /* ИСПРАВЛЕНО */
             heroDate: "10 октября 2026",
 
             invitationLabel: "Наша радость",
@@ -1473,7 +1565,7 @@
             invitationTitle: "Ойрат & Анастасия",
 
             invitationText:
-              "Мы женимся. Мы хотим вместе отметить один из самых особенных дней в нашей жизни.<br><br>В этот радостный момент мы хотим видеть рядом наших близких и любимых людей.",
+              "Мы хотим вместе отметить один из самых особенных дней в нашей жизни.<br><br>В этот радостный момент мы хотим видеть рядом наших близких и любимых людей.",
 
             quote: "Два сердца,<br>одна жизнь,<br>одно счастье.",
 
@@ -1485,6 +1577,22 @@
 
             timeCaption: "Встреча гостей",
 
+            countdownLabel: "До торжества",
+
+            countdownTitle: "Совсем скоро",
+
+            countdownDays: "Дней",
+
+            countdownHours: "Часов",
+
+            countdownMinutes: "Минут",
+
+            countdownSeconds: "Секунд",
+
+            countdownCaption: "10 октября 2026 · 14:00",
+
+            countdownFinished: "Наш праздник начался",
+
             venueLabel: "Праздничный вечер",
 
             venueTitle: "Место<br>встречи",
@@ -1492,6 +1600,10 @@
             venueName: "«Алтын Орда»",
 
             venueAddress: "г. Караганда,<br>ул. Карла Маркса, 3/6",
+
+            hostsLabel: "Хозяева торжества",
+
+            hostsNames: "Саламат & Назгүл",
 
             map: "Посмотреть на карте",
 
@@ -1574,10 +1686,8 @@
         const textMap = {
           ".hero__label": t.heroLabel,
 
-          /* ИСПРАВЛЕНО */
           ".hero__top-date": t.heroDate,
 
-          /* ИСПРАВЛЕНО */
           ".hero__date": t.heroDate,
 
           ".invitation .section-label": t.invitationLabel,
@@ -1594,6 +1704,20 @@
 
           ".date__caption": t.timeCaption,
 
+          ".countdown .section-label": t.countdownLabel,
+
+          ".countdown__title": t.countdownTitle,
+
+          ".countdown__caption": t.countdownCaption,
+
+          ".countdown__item:nth-child(1) .countdown__label": t.countdownDays,
+
+          ".countdown__item:nth-child(2) .countdown__label": t.countdownHours,
+
+          ".countdown__item:nth-child(3) .countdown__label": t.countdownMinutes,
+
+          ".countdown__item:nth-child(4) .countdown__label": t.countdownSeconds,
+
           ".venue .section-label": t.venueLabel,
 
           ".venue__title": t.venueTitle,
@@ -1601,6 +1725,10 @@
           ".venue__name": t.venueName,
 
           ".venue__address": t.venueAddress,
+
+          ".venue__hosts-label": t.hostsLabel,
+
+          ".venue__hosts-names": t.hostsNames,
 
           ".venue__map span:first-child": t.map,
 
@@ -1639,7 +1767,9 @@
           }
         });
 
-        /* Invitation text */
+        /* =====================================================
+           INVITATION TEXT
+        ====================================================== */
 
         const invitationText = document.querySelector(".invitation__text");
 
@@ -1647,7 +1777,9 @@
           invitationText.innerHTML = t.invitationText;
         }
 
-        /* Name placeholder */
+        /* =====================================================
+           NAME PLACEHOLDER
+        ====================================================== */
 
         const nameInput = document.querySelector("#name");
 
@@ -1655,7 +1787,9 @@
           nameInput.placeholder = t.namePlaceholder;
         }
 
-        /* Images */
+        /* =====================================================
+           IMAGES
+        ====================================================== */
 
         const images = document.querySelectorAll("img");
 
@@ -1667,7 +1801,9 @@
           images[1].alt = t.imageVenue;
         }
 
-        /* Map */
+        /* =====================================================
+           MAP
+        ====================================================== */
 
         const mapLink = document.querySelector(".venue__map");
 
@@ -1675,9 +1811,13 @@
           mapLink.setAttribute("aria-label", t.mapAria);
         }
 
-        /* Current language */
+        /* =====================================================
+           CURRENT LANGUAGE
+        ====================================================== */
 
         window.currentLanguage = lang;
+
+        window.weddingTranslations = t;
       })();
     </script>
 
@@ -1696,7 +1836,7 @@
     </script>
 
     <!-- =====================================================
-         RSVP + SCROLL + MUSIC
+         RSVP + SCROLL + MUSIC + COUNTDOWN
     ====================================================== -->
 
     <script>
@@ -1710,44 +1850,44 @@
 
       const success = document.getElementById("success");
 
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
+      if (form) {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
 
-        const formData = new FormData(form);
+          const formData = new FormData(form);
 
-        const data = {
-          name: String(formData.get("name") || "").trim(),
+          const data = {
+            name: String(formData.get("name") || "").trim(),
 
-          attendance: formData.get("attendance"),
-        };
+            attendance: formData.get("attendance"),
+          };
 
-        /*
-            Сейчас RSVP только
-            обрабатывается браузером.
+          /*
+              Позже можно подключить backend:
 
-            Позже можно подключить backend:
+              fetch("/api/rsvp", {
+                method: "POST",
+                headers: {
+                  "Content-Type":
+                    "application/json"
+                },
+                body:
+                  JSON.stringify(data)
+              });
+            */
 
-            fetch("/api/rsvp", {
-              method: "POST",
-              headers: {
-                "Content-Type":
-                  "application/json"
-              },
-              body: JSON.stringify(data)
-            });
-          */
+          console.log("RSVP:", data);
 
-        console.log("RSVP:", data);
+          formWrapper.style.display = "none";
 
-        formWrapper.style.display = "none";
+          success.classList.add("is-visible");
 
-        success.classList.add("is-visible");
-
-        success.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
+          success.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
         });
-      });
+      }
 
       /* =====================================================
          SCROLL REVEAL
@@ -1804,6 +1944,82 @@
       });
 
       /* =====================================================
+         COUNTDOWN
+      ====================================================== */
+
+      const countdownTarget = new Date("2026-10-10T14:00:00+05:00").getTime();
+
+      const countdownDays = document.getElementById("countdownDays");
+
+      const countdownHours = document.getElementById("countdownHours");
+
+      const countdownMinutes = document.getElementById("countdownMinutes");
+
+      const countdownSeconds = document.getElementById("countdownSeconds");
+
+      const countdownTitle = document.querySelector(".countdown__title");
+
+      const countdownGrid = document.querySelector(".countdown__grid");
+
+      const countdownCaption = document.querySelector(".countdown__caption");
+
+      function updateCountdown() {
+        const now = Date.now();
+
+        const distance = countdownTarget - now;
+
+        if (distance <= 0) {
+          if (countdownGrid) {
+            countdownGrid.innerHTML = `
+              <div
+                class="countdown__finished"
+                style="grid-column: 1 / -1;"
+              >
+                ${
+                  window.weddingTranslations?.countdownFinished ||
+                  "Наш праздник начался"
+                }
+              </div>
+            `;
+          }
+
+          if (countdownCaption) {
+            countdownCaption.style.display = "none";
+          }
+
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+
+        const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+        const seconds = Math.floor((distance / 1000) % 60);
+
+        if (countdownDays) {
+          countdownDays.textContent = String(days).padStart(2, "0");
+        }
+
+        if (countdownHours) {
+          countdownHours.textContent = String(hours).padStart(2, "0");
+        }
+
+        if (countdownMinutes) {
+          countdownMinutes.textContent = String(minutes).padStart(2, "0");
+        }
+
+        if (countdownSeconds) {
+          countdownSeconds.textContent = String(seconds).padStart(2, "0");
+        }
+      }
+
+      updateCountdown();
+
+      setInterval(updateCountdown, 1000);
+
+      /* =====================================================
          MUSIC
       ====================================================== */
 
@@ -1830,7 +2046,8 @@
           .catch(() => {
             /*
               Автовоспроизведение
-              может быть запрещено браузером.
+              может быть запрещено
+              браузером.
             */
           });
       }
