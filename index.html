@@ -19,7 +19,6 @@
     />
 
     <meta name="theme-color" content="#f6f2eb" />
-
     <meta name="author" content="Ойрат & Анастасия" />
 
     <title>Ойрат & Анастасия | Үйлену тойына шақыру | 10 қазан 2026</title>
@@ -27,48 +26,59 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="kk_KZ" />
+
     <meta
       property="og:title"
       content="Ойрат & Анастасия | Үйлену тойына шақыру"
     />
+
     <meta
       property="og:description"
       content="Ойрат пен Анастасияның үйлену тойына шақыруы. 10 қазан 2026, сағат 14:00, Қарағанды қаласы."
     />
+
     <meta
       property="og:image"
       content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90"
     />
+
     <meta
       property="og:image:alt"
       content="Ойрат пен Анастасияның үйлену тойы"
     />
+
     <meta property="og:site_name" content="Ойрат & Анастасия" />
 
     <!-- X / Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+
     <meta
       name="twitter:title"
       content="Ойрат & Анастасия | Үйлену тойына шақыру"
     />
+
     <meta
       name="twitter:description"
       content="Үйлену тойы: 10 қазан 2026, сағат 14:00, Қарағанды қаласы."
     />
+
     <meta
       name="twitter:image"
       content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90"
     />
+
     <meta
       name="twitter:image:alt"
       content="Ойрат пен Анастасияның үйлену тойы"
     />
 
     <!--
-    Canonical URL:
-    Добавьте реальный URL сайта после публикации:
-    <link rel="canonical" href="https://example.kz/">
-  -->
+      Canonical URL:
+      Добавьте реальный URL сайта после публикации.
+
+      Например:
+      <link rel="canonical" href="https://your-domain.kz/" />
+    -->
 
     <!-- Structured Data: Wedding Event -->
     <script type="application/ld+json">
@@ -85,6 +95,7 @@
           "name": "«Алтын Орда»",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Карла Маркса 3/6",
             "addressLocality": "Қарағанды",
             "addressCountry": "KZ"
           }
@@ -113,30 +124,19 @@
     />
 
     <style>
-      /* =====================================================
-       VARIABLES
-    ====================================================== */
-
       :root {
         --bg: #f6f2eb;
         --bg-secondary: #eee8dd;
-
         --text: #24231f;
         --muted: #77736b;
-
         --gold: #ae9568;
         --gold-light: #d5bd91;
-
         --line: rgba(36, 35, 31, 0.15);
 
         --hero-image: url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=90");
 
         --final-image: url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=90");
       }
-
-      /* =====================================================
-       RESET
-    ====================================================== */
 
       * {
         box-sizing: border-box;
@@ -151,13 +151,10 @@
 
       body {
         min-width: 320px;
-
         background: var(--bg);
         color: var(--text);
-
         font-family: "Manrope", sans-serif;
         font-weight: 400;
-
         overflow-x: hidden;
       }
 
@@ -182,8 +179,8 @@
       }
 
       /* =====================================================
-       COMMON
-    ====================================================== */
+         COMMON
+      ====================================================== */
 
       .section {
         position: relative;
@@ -194,30 +191,25 @@
         display: flex;
         align-items: center;
         gap: 12px;
-
         margin-bottom: 28px;
 
         color: var(--gold);
-
         font-size: 9px;
         font-weight: 600;
-
         letter-spacing: 0.25em;
         text-transform: uppercase;
       }
 
       .section-label::before {
         content: "";
-
         width: 28px;
         height: 1px;
-
         background: var(--gold);
       }
 
       /* =====================================================
-       HERO
-    ====================================================== */
+         HERO
+      ====================================================== */
 
       .hero {
         position: relative;
@@ -250,23 +242,34 @@
 
       .language-switcher {
         position: absolute;
+
         top: calc(24px + env(safe-area-inset-top));
         right: 24px;
+
         z-index: 4;
+
         display: flex;
         gap: 4px;
+
         padding: 3px;
+
         border: 1px solid rgba(255, 255, 255, 0.28);
+
         background: rgba(0, 0, 0, 0.18);
+
         backdrop-filter: blur(8px);
       }
 
       .language-switcher a {
         min-width: 30px;
+
         padding: 5px 7px;
+
         color: rgba(255, 255, 255, 0.7);
+
         font-size: 8px;
         font-weight: 600;
+
         letter-spacing: 0.08em;
         text-align: center;
         text-transform: uppercase;
@@ -292,7 +295,6 @@
         font-size: 9px;
         letter-spacing: 0.3em;
         text-transform: uppercase;
-
         opacity: 0.78;
       }
 
@@ -314,9 +316,11 @@
         font-family: "Cormorant Garamond", serif;
 
         font-size: clamp(62px, 18vw, 84px);
+
         font-weight: 400;
 
         line-height: 0.75;
+
         letter-spacing: -0.045em;
       }
 
@@ -330,6 +334,7 @@
         color: var(--gold-light);
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 38px;
 
         line-height: 1;
@@ -338,11 +343,13 @@
       .hero__date {
         display: flex;
         align-items: center;
+
         gap: 14px;
 
         margin-top: 32px;
 
         font-size: 10px;
+
         letter-spacing: 0.22em;
 
         text-transform: uppercase;
@@ -372,6 +379,7 @@
         gap: 8px;
 
         font-size: 8px;
+
         letter-spacing: 0.15em;
 
         text-transform: uppercase;
@@ -402,8 +410,8 @@
       }
 
       /* =====================================================
-       INVITATION
-    ====================================================== */
+         INVITATION
+      ====================================================== */
 
       .invitation {
         text-align: center;
@@ -419,6 +427,7 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 30px;
       }
 
@@ -428,7 +437,9 @@
         margin: 0 auto 28px;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 49px;
+
         font-weight: 400;
 
         line-height: 0.92;
@@ -442,6 +453,7 @@
         color: var(--muted);
 
         font-size: 13px;
+
         font-weight: 300;
 
         line-height: 1.9;
@@ -460,8 +472,8 @@
       }
 
       /* =====================================================
-       QUOTE
-    ====================================================== */
+         QUOTE
+      ====================================================== */
 
       .quote {
         padding-top: 70px;
@@ -476,6 +488,7 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 28px;
       }
 
@@ -485,15 +498,17 @@
         margin: 0 auto;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 32px;
+
         font-weight: 400;
 
         line-height: 1.15;
       }
 
       /* =====================================================
-       DATE
-    ====================================================== */
+         DATE
+      ====================================================== */
 
       .date {
         padding-top: 70px;
@@ -508,10 +523,13 @@
 
       .date__number {
         font-family: "Cormorant Garamond", serif;
+
         font-size: 120px;
+
         font-weight: 400;
 
         line-height: 0.72;
+
         letter-spacing: -0.07em;
       }
 
@@ -519,9 +537,11 @@
         margin-top: 24px;
 
         font-size: 12px;
+
         font-weight: 500;
 
         letter-spacing: 0.3em;
+
         text-transform: uppercase;
       }
 
@@ -531,6 +551,7 @@
         color: var(--muted);
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 31px;
       }
 
@@ -540,9 +561,11 @@
         color: var(--gold);
 
         font-size: 9px;
+
         font-weight: 600;
 
         letter-spacing: 0.25em;
+
         text-transform: uppercase;
       }
 
@@ -557,6 +580,7 @@
 
       .date__time {
         font-family: "Cormorant Garamond", serif;
+
         font-size: 44px;
       }
 
@@ -566,14 +590,15 @@
         color: var(--muted);
 
         font-size: 8px;
+
         letter-spacing: 0.2em;
 
         text-transform: uppercase;
       }
 
       /* =====================================================
-       VENUE
-    ====================================================== */
+         VENUE
+      ====================================================== */
 
       .venue {
         padding-top: 82px;
@@ -586,7 +611,9 @@
         margin-bottom: 15px;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 55px;
+
         font-weight: 400;
 
         line-height: 0.87;
@@ -596,6 +623,7 @@
         margin-top: 32px;
 
         font-size: 19px;
+
         font-weight: 500;
       }
 
@@ -628,6 +656,7 @@
         padding: 17px 20px;
 
         display: flex;
+
         align-items: center;
         justify-content: space-between;
 
@@ -638,9 +667,11 @@
         color: var(--text);
 
         font-size: 9px;
+
         font-weight: 600;
 
         letter-spacing: 0.15em;
+
         text-transform: uppercase;
 
         transition:
@@ -655,12 +686,13 @@
 
       .venue__map-arrow {
         font-size: 18px;
+
         font-weight: 300;
       }
 
       /* =====================================================
-       RSVP
-    ====================================================== */
+         RSVP
+      ====================================================== */
 
       .rsvp {
         padding-top: 90px;
@@ -673,10 +705,13 @@
         margin-bottom: 17px;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 59px;
+
         font-weight: 400;
 
         line-height: 0.86;
+
         letter-spacing: -0.03em;
       }
 
@@ -704,9 +739,11 @@
         color: var(--muted);
 
         font-size: 8px;
+
         font-weight: 600;
 
         letter-spacing: 0.18em;
+
         text-transform: uppercase;
       }
 
@@ -716,6 +753,7 @@
         padding: 14px 0;
 
         border: 0;
+
         border-bottom: 1px solid var(--line);
 
         border-radius: 0;
@@ -738,11 +776,12 @@
       }
 
       /* =====================================================
-       ATTENDANCE
-    ====================================================== */
+         ATTENDANCE
+      ====================================================== */
 
       .attendance {
         display: grid;
+
         gap: 10px;
       }
 
@@ -786,8 +825,8 @@
       }
 
       /* =====================================================
-       SUBMIT
-    ====================================================== */
+         SUBMIT
+      ====================================================== */
 
       .submit {
         width: 100%;
@@ -801,6 +840,7 @@
         color: var(--bg);
 
         font-size: 9px;
+
         font-weight: 600;
 
         letter-spacing: 0.2em;
@@ -817,8 +857,8 @@
       }
 
       /* =====================================================
-       SUCCESS
-    ====================================================== */
+         SUCCESS
+      ====================================================== */
 
       .success {
         display: none;
@@ -838,6 +878,7 @@
         color: var(--gold);
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 42px;
       }
 
@@ -845,7 +886,9 @@
         margin-bottom: 15px;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 56px;
+
         font-weight: 400;
 
         line-height: 0.9;
@@ -860,8 +903,8 @@
       }
 
       /* =====================================================
-       FINAL
-    ====================================================== */
+         FINAL
+      ====================================================== */
 
       .final {
         position: relative;
@@ -869,7 +912,9 @@
         min-height: 80svh;
 
         display: flex;
+
         flex-direction: column;
+
         justify-content: flex-end;
 
         padding: 60px 24px calc(60px + env(safe-area-inset-bottom));
@@ -888,6 +933,7 @@
 
       .final__content {
         position: relative;
+
         z-index: 2;
       }
 
@@ -897,6 +943,7 @@
         color: var(--gold-light);
 
         font-size: 9px;
+
         font-weight: 600;
 
         letter-spacing: 0.25em;
@@ -908,10 +955,13 @@
         max-width: 330px;
 
         font-family: "Cormorant Garamond", serif;
+
         font-size: 65px;
+
         font-weight: 400;
 
         line-height: 0.8;
+
         letter-spacing: -0.04em;
       }
 
@@ -936,8 +986,8 @@
       }
 
       /* =====================================================
-       REVEAL ANIMATION
-    ====================================================== */
+         REVEAL ANIMATION
+      ====================================================== */
 
       .reveal {
         opacity: 0;
@@ -956,8 +1006,8 @@
       }
 
       /* =====================================================
-       ACCESSIBILITY
-    ====================================================== */
+         ACCESSIBILITY
+      ====================================================== */
 
       @media (prefers-reduced-motion: reduce) {
         html {
@@ -968,18 +1018,21 @@
         *::before,
         *::after {
           animation-duration: 0.01ms !important;
+
           animation-iteration-count: 1 !important;
+
           transition-duration: 0.01ms !important;
         }
       }
 
       /* =====================================================
-       MOBILE CONTAINER
-    ====================================================== */
+         MOBILE CONTAINER
+      ====================================================== */
 
       @media (min-width: 600px) {
         body {
           width: 100%;
+
           max-width: 430px;
 
           margin: 0 auto;
@@ -992,11 +1045,16 @@
 
   <body>
     <!-- =====================================================
-       HERO
-  ====================================================== -->
-    <audio id="weddingMusic" loop>
+         MUSIC
+    ====================================================== -->
+
+    <audio id="weddingMusic" loop preload="auto">
       <source src="./sound.mp3" type="audio/mpeg" />
     </audio>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
 
     <header class="hero" id="home">
       <nav class="language-switcher" aria-label="Тілді таңдау / Выбор языка">
@@ -1007,6 +1065,7 @@
       <div class="hero__top">
         <div class="hero__label">Үйлену тойына шақыру</div>
 
+        <!-- Теперь дата переводится -->
         <div class="hero__top-date">10 қазан 2026</div>
       </div>
 
@@ -1019,6 +1078,7 @@
           <span>Анастасия</span>
         </div>
 
+        <!-- Теперь эта дата тоже переводится -->
         <div class="hero__date">10 қазан 2026</div>
       </div>
 
@@ -1031,8 +1091,8 @@
 
     <main>
       <!-- =====================================================
-         INVITATION
-    ====================================================== -->
+           INVITATION
+      ====================================================== -->
 
       <section class="section invitation">
         <div class="reveal">
@@ -1045,8 +1105,10 @@
           <p class="invitation__text">
             Біз үйленеміз. Өміріміздегі ең ерекше күндердің бірін бірге атап
             өткіміз келеді.
+
             <br />
             <br />
+
             Осы қуанышты сәтте жанымызда жақындарымыз бен сүйікті адамдарымыздың
             болғанын қалаймыз.
           </p>
@@ -1064,20 +1126,26 @@
       </section>
 
       <!-- =====================================================
-         QUOTE
-    ====================================================== -->
+           QUOTE
+      ====================================================== -->
 
       <section class="section quote">
         <div class="reveal">
           <div class="quote__symbol">✦</div>
 
-          <p class="quote__text">Екі жүрек, бір өмір, бір бақыт.</p>
+          <p class="quote__text">
+            Екі жүрек,
+            <br />
+            бір өмір,
+            <br />
+            бір бақыт.
+          </p>
         </div>
       </section>
 
       <!-- =====================================================
-         DATE
-    ====================================================== -->
+           DATE
+      ====================================================== -->
 
       <section class="section date" id="date">
         <div class="reveal">
@@ -1102,21 +1170,27 @@
       </section>
 
       <!-- =====================================================
-         VENUE
-    ====================================================== -->
+           VENUE
+      ====================================================== -->
 
       <section class="section venue" id="venue">
         <div class="reveal">
           <div class="section-label">Мерекелік кеш</div>
 
           <h2 class="venue__title">
-            Кездесу<br />
+            Кездесу
+            <br />
             орны
           </h2>
 
           <div class="venue__name">«Алтын Орда»</div>
 
-          <div class="venue__address">Қарағанды қаласы</div>
+          <!-- АДРЕС -->
+          <div class="venue__address">
+            Қарағанды қаласы,
+            <br />
+            Карла Маркса 3/6
+          </div>
 
           <img
             class="venue__image"
@@ -1143,8 +1217,8 @@
       </section>
 
       <!-- =====================================================
-         RSVP
-    ====================================================== -->
+           RSVP
+      ====================================================== -->
 
       <section class="section rsvp" id="rsvp">
         <div id="rsvpFormWrapper">
@@ -1152,7 +1226,8 @@
             <div class="section-label">RSVP</div>
 
             <h2 class="rsvp__title">
-              Сізді<br />
+              Сізді
+              <br />
               күтеміз
             </h2>
 
@@ -1223,8 +1298,8 @@
         </div>
 
         <!-- ===================================================
-           SUCCESS
-      ==================================================== -->
+             SUCCESS
+        ==================================================== -->
 
         <div class="success" id="success">
           <div class="success__symbol">✦</div>
@@ -1240,15 +1315,16 @@
       </section>
 
       <!-- =====================================================
-         FINAL
-    ====================================================== -->
+           FINAL
+      ====================================================== -->
 
       <section class="final">
         <div class="final__content">
           <div class="final__small">Кездескенше</div>
 
           <div class="final__title">
-            Сіздерді<br />
+            Сіздерді
+            <br />
             күтеміз
           </div>
 
@@ -1262,120 +1338,198 @@
     <noscript>
       <p>
         Ойрат пен Анастасияның үйлену тойы 2026 жылғы 10 қазанда сағат 14:00-де
-        Қарағанды қаласындағы «Алтын Орда» мейрамханасында өтеді.
+        Қарағанды қаласындағы «Алтын Орда» мейрамханасында, Карла Маркса 3/6
+        мекенжайында өтеді.
       </p>
     </noscript>
 
+    <!-- =====================================================
+         LANGUAGE
+    ====================================================== -->
+
     <script>
-      /*
-       * LANGUAGE
-       * ?lang=kk  -> Қазақша
-       * ?lang=ru  -> Русский
-       *
-       * Без параметра используется казахский язык.
-       */
       (() => {
         const params = new URLSearchParams(window.location.search);
+
         const requestedLang = params.get("lang");
+
         const lang = requestedLang === "ru" ? "ru" : "kk";
 
         const translations = {
           kk: {
             pageLang: "kk",
+
             title: "Ойрат & Анастасия | Үйлену тойына шақыру | 10 қазан 2026",
+
             description:
               "Ойрат пен Анастасияның үйлену тойына шақыруы. Той 2026 жылғы 10 қазанда сағат 14:00-де Қарағанды қаласындағы «Алтын Орда» мейрамханасында өтеді.",
+
             ogTitle: "Ойрат & Анастасия | Үйлену тойына шақыру",
+
             ogDescription:
               "Ойрат пен Анастасияның үйлену тойына шақыруы. 10 қазан 2026, сағат 14:00, Қарағанды қаласы.",
+
             twitterTitle: "Ойрат & Анастасия | Үйлену тойына шақыру",
+
             twitterDescription:
               "Үйлену тойы: 10 қазан 2026, сағат 14:00, Қарағанды қаласы.",
 
             heroLabel: "Үйлену тойына шақыру",
+
+            /* ИСПРАВЛЕНО */
+            heroDate: "10 қазан 2026",
+
             invitationLabel: "Біздің қуанышымыз",
+
             invitationTitle: "Ойрат & Анастасия",
+
             invitationText:
               "Біз үйленеміз. Өміріміздегі ең ерекше күндердің бірін бірге атап өткіміз келеді.<br><br>Осы қуанышты сәтте жанымызда жақындарымыз бен сүйікті адамдарымыздың болғанын қалаймыз.",
+
             quote: "Екі жүрек,<br>бір өмір,<br>бір бақыт.",
+
             dateLabel: "Күнін белгілеп қойыңыз",
+
             month: "Қазан",
+
             weekday: "Сенбі",
+
             timeCaption: "Қонақтарды қарсы алу",
+
             venueLabel: "Мерекелік кеш",
+
             venueTitle: "Кездесу<br>орны",
+
             venueName: "«Алтын Орда»",
-            venueAddress: "Қарағанды қаласы",
+
+            venueAddress: "Қарағанды қаласы,<br>Карла Маркса 3/6",
+
             map: "Картадан көру",
+
             mapAria:
               "«Алтын Орда» мейрамханасының орналасуын 2GIS картасынан көру",
+
             rsvpLabel: "RSVP",
+
             rsvpTitle: "Сізді<br>күтеміз",
+
             rsvpDescription:
               "Біздің қуанышымызды бірге бөлісу үшін қатысатыныңызды растауыңызды сұраймыз.",
+
             nameLabel: "Аты-жөніңіз",
+
             namePlaceholder: "Аты-жөніңізді енгізіңіз",
+
             answerLabel: "Сіздің жауабыңыз",
+
             yes: "Қуана қатысамын",
+
             no: "Өкінішке қарай, қатыса алмаймын",
+
             submit: "Қатысуымды растау",
+
             successTitle: "Рақмет!",
+
             successText:
               "Жауабыңыз қабылданды.<br>Сізбен бірге бұл күнді атап өтуді асыға күтеміз.",
+
             finalSmall: "Кездескенше",
+
             finalTitle: "Сіздерді<br>күтеміз",
+
             scroll: "Төмен",
+
             imageWedding: "Ойрат пен Анастасияның үйлену тойына арналған сурет",
+
             imageVenue: "«Алтын Орда» мерекелік залы, Қарағанды",
           },
 
           ru: {
             pageLang: "ru",
+
             title:
               "Ойрат & Анастасия | Приглашение на свадьбу | 10 октября 2026",
+
             description:
               "Приглашение на свадьбу Ойрата и Анастасии. Свадьба состоится 10 октября 2026 года в 14:00 в ресторане «Алтын Орда» в Караганде.",
+
             ogTitle: "Ойрат & Анастасия | Приглашение на свадьбу",
+
             ogDescription:
               "Приглашение на свадьбу Ойрата и Анастасии. 10 октября 2026 года, 14:00, Караганда.",
+
             twitterTitle: "Ойрат & Анастасия | Приглашение на свадьбу",
+
             twitterDescription:
               "Свадьба: 10 октября 2026 года, 14:00, Караганда.",
 
             heroLabel: "Приглашение на свадьбу",
+
+            /* ИСПРАВЛЕНО */
+            heroDate: "10 октября 2026",
+
             invitationLabel: "Наша радость",
+
             invitationTitle: "Ойрат & Анастасия",
+
             invitationText:
               "Мы женимся. Мы хотим вместе отметить один из самых особенных дней в нашей жизни.<br><br>В этот радостный момент мы хотим видеть рядом наших близких и любимых людей.",
+
             quote: "Два сердца,<br>одна жизнь,<br>одно счастье.",
+
             dateLabel: "Сохраните эту дату",
+
             month: "Октябрь",
+
             weekday: "Суббота",
+
             timeCaption: "Встреча гостей",
+
             venueLabel: "Праздничный вечер",
+
             venueTitle: "Место<br>встречи",
+
             venueName: "«Алтын Орда»",
-            venueAddress: "г. Караганда",
+
+            venueAddress: "г. Караганда,<br>ул. Карла Маркса, 3/6",
+
             map: "Посмотреть на карте",
+
             mapAria:
               "Посмотреть расположение ресторана «Алтын Орда» на карте 2GIS",
+
             rsvpLabel: "RSVP",
+
             rsvpTitle: "Мы<br>ждём вас",
+
             rsvpDescription:
               "Пожалуйста, подтвердите своё присутствие, чтобы мы могли разделить этот радостный день вместе.",
+
             nameLabel: "Ваше имя",
+
             namePlaceholder: "Введите ваше имя",
+
             answerLabel: "Ваш ответ",
+
             yes: "С радостью приду",
+
             no: "К сожалению, не смогу прийти",
+
             submit: "Подтвердить участие",
+
             successTitle: "Спасибо!",
+
             successText:
               "Ваш ответ принят.<br>Мы с нетерпением ждём возможности разделить этот день вместе с вами.",
+
             finalSmall: "До встречи",
+
             finalTitle: "Мы<br>ждём вас",
+
             scroll: "Ниже",
+
             imageWedding: "Фотография свадьбы Ойрата и Анастасии",
+
             imageVenue: "Праздничный зал ресторана «Алтын Орда» в Караганде",
           },
         };
@@ -1383,88 +1537,172 @@
         const t = translations[lang];
 
         document.documentElement.lang = t.pageLang;
+
         document.title = t.title;
+
+        /* =====================================================
+           META
+        ====================================================== */
 
         const setMeta = (selector, value) => {
           const element = document.querySelector(selector);
-          if (element) element.setAttribute("content", value);
+
+          if (element) {
+            element.setAttribute("content", value);
+          }
         };
 
         setMeta('meta[name="description"]', t.description);
+
         setMeta('meta[property="og:title"]', t.ogTitle);
+
         setMeta('meta[property="og:description"]', t.ogDescription);
+
         setMeta('meta[name="twitter:title"]', t.twitterTitle);
+
         setMeta('meta[name="twitter:description"]', t.twitterDescription);
+
         setMeta(
           'meta[property="og:locale"]',
           lang === "ru" ? "ru_RU" : "kk_KZ",
         );
 
+        /* =====================================================
+           TEXT
+        ====================================================== */
+
         const textMap = {
           ".hero__label": t.heroLabel,
+
+          /* ИСПРАВЛЕНО */
+          ".hero__top-date": t.heroDate,
+
+          /* ИСПРАВЛЕНО */
+          ".hero__date": t.heroDate,
+
           ".invitation .section-label": t.invitationLabel,
+
           ".invitation__title": t.invitationTitle,
+
           ".quote__text": t.quote,
+
           ".date .section-label": t.dateLabel,
+
           ".date__month": t.month,
+
           ".date__weekday": t.weekday,
+
           ".date__caption": t.timeCaption,
+
           ".venue .section-label": t.venueLabel,
+
           ".venue__title": t.venueTitle,
+
           ".venue__name": t.venueName,
+
           ".venue__address": t.venueAddress,
+
           ".venue__map span:first-child": t.map,
+
           ".rsvp .section-label": t.rsvpLabel,
+
           ".rsvp__title": t.rsvpTitle,
+
           ".rsvp__description": t.rsvpDescription,
+
           ".form-label[for='name']": t.nameLabel,
-          ".form-label:not([for])": t.answerLabel,
+
+          ".rsvp .form-label:not([for])": t.answerLabel,
+
           "label[for='yes']": t.yes,
+
           "label[for='no']": t.no,
+
           ".submit": t.submit,
+
           ".success__title": t.successTitle,
+
           ".success__text": t.successText,
+
           ".final__small": t.finalSmall,
+
           ".final__title": t.finalTitle,
+
           ".hero__scroll > div:first-child": t.scroll,
         };
 
         Object.entries(textMap).forEach(([selector, value]) => {
           const element = document.querySelector(selector);
-          if (element) element.innerHTML = value;
+
+          if (element) {
+            element.innerHTML = value;
+          }
         });
 
+        /* Invitation text */
+
         const invitationText = document.querySelector(".invitation__text");
-        if (invitationText) invitationText.innerHTML = t.invitationText;
+
+        if (invitationText) {
+          invitationText.innerHTML = t.invitationText;
+        }
+
+        /* Name placeholder */
 
         const nameInput = document.querySelector("#name");
-        if (nameInput) nameInput.placeholder = t.namePlaceholder;
+
+        if (nameInput) {
+          nameInput.placeholder = t.namePlaceholder;
+        }
+
+        /* Images */
 
         const images = document.querySelectorAll("img");
-        if (images[0]) images[0].alt = t.imageWedding;
-        if (images[1]) images[1].alt = t.imageVenue;
+
+        if (images[0]) {
+          images[0].alt = t.imageWedding;
+        }
+
+        if (images[1]) {
+          images[1].alt = t.imageVenue;
+        }
+
+        /* Map */
 
         const mapLink = document.querySelector(".venue__map");
-        if (mapLink) mapLink.setAttribute("aria-label", t.mapAria);
 
-        // Обновляем видимый язык без перезагрузки страницы.
+        if (mapLink) {
+          mapLink.setAttribute("aria-label", t.mapAria);
+        }
+
+        /* Current language */
+
         window.currentLanguage = lang;
       })();
     </script>
 
+    <!-- =====================================================
+         LANGUAGE SWITCHER
+    ====================================================== -->
+
     <script>
       (() => {
         const lang = window.currentLanguage || "kk";
+
         document.querySelectorAll("[data-lang-switch]").forEach((link) => {
           link.classList.toggle("is-active", link.dataset.langSwitch === lang);
         });
       })();
     </script>
 
+    <!-- =====================================================
+         RSVP + SCROLL + MUSIC
+    ====================================================== -->
+
     <script>
       /* =====================================================
-       RSVP
-    ====================================================== */
+         RSVP
+      ====================================================== */
 
       const form = document.getElementById("rsvpForm");
 
@@ -1484,19 +1722,20 @@
         };
 
         /*
-          Қазір RSVP тек браузерде өңделеді.
+            Сейчас RSVP только
+            обрабатывается браузером.
 
-          Кейін backend қосылғанда
-          осы объектіні API-ге жіберуге болады:
+            Позже можно подключить backend:
 
-          fetch("/api/rsvp", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-          });
-        */
+            fetch("/api/rsvp", {
+              method: "POST",
+              headers: {
+                "Content-Type":
+                  "application/json"
+              },
+              body: JSON.stringify(data)
+            });
+          */
 
         console.log("RSVP:", data);
 
@@ -1511,8 +1750,8 @@
       });
 
       /* =====================================================
-       SCROLL REVEAL
-    ====================================================== */
+         SCROLL REVEAL
+      ====================================================== */
 
       const revealElements = document.querySelectorAll(".reveal");
 
@@ -1538,8 +1777,8 @@
       });
 
       /* =====================================================
-       SMOOTH ANCHOR SCROLL
-    ====================================================== */
+         SMOOTH ANCHOR SCROLL
+      ====================================================== */
 
       document.querySelectorAll('a[href^="#"]').forEach((link) => {
         link.addEventListener("click", (event) => {
@@ -1564,17 +1803,52 @@
         });
       });
 
+      /* =====================================================
+         MUSIC
+      ====================================================== */
+
       const music = document.getElementById("weddingMusic");
 
-      function startMusic() {
-        music.play().catch(() => {});
+      let musicStarted = false;
 
-        document.removeEventListener("click", startMusic);
-        document.removeEventListener("touchstart", startMusic);
+      function startMusic() {
+        if (!music || musicStarted) {
+          return;
+        }
+
+        music
+          .play()
+          .then(() => {
+            musicStarted = true;
+
+            document.removeEventListener("click", startMusic);
+
+            document.removeEventListener("touchstart", startMusic);
+
+            document.removeEventListener("pointerdown", startMusic);
+          })
+          .catch(() => {
+            /*
+              Автовоспроизведение
+              может быть запрещено браузером.
+            */
+          });
       }
 
-      document.addEventListener("click", startMusic);
-      document.addEventListener("touchstart", startMusic);
+      document.addEventListener("click", startMusic, {
+        once: false,
+        passive: true,
+      });
+
+      document.addEventListener("touchstart", startMusic, {
+        once: false,
+        passive: true,
+      });
+
+      document.addEventListener("pointerdown", startMusic, {
+        once: false,
+        passive: true,
+      });
     </script>
   </body>
 </html>
